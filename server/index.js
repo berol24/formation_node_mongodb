@@ -7,7 +7,8 @@ const cors = require('cors')
 
 
 app.use(cors({
-    origin: "*"
+    // origin: "*"
+    origin: "https://formation-node-mongodb.vercel.app"
 }));
 
 const mongoose =  require('mongoose')
