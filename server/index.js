@@ -30,7 +30,7 @@ mongoose.connect(MONGODB_URL)
 
 const post_route = require('./routes/postRoute')
 
-app.use("/api" ,post_route)
+app.use("/formation-node-mongodb-api.vercel.app" ,post_route)
 
 app.listen(PORT , function () {
     console.log(`Server is running au port ${PORT}`);
