@@ -3,7 +3,7 @@ import axios from "axios";
 
 class Post {
   create(formData) {
-    const url = "http://localhost:8000/api/create-post";
+    const url = "formation-node-mongodb-api.vercel.app/api/create-post";
     const config = {
       headers: {
         "content-type": "multipart/form-data",
@@ -15,7 +15,7 @@ class Post {
 
 
   getPosts(){
-    const url = "http://localhost:8000/api/get-posts";
+    const url = "formation-node-mongodb-api.vercel.app/api/get-posts";
 
     return axios.get(url);
 
@@ -23,7 +23,7 @@ class Post {
 
 
   deletePost(id){
-    const url = "http://localhost:8000/api/delete-post/"+id;
+    const url = "formation-node-mongodb-api.vercel.app/api/delete-post/"+id;
 
     return axios.get(url);
 
@@ -31,7 +31,7 @@ class Post {
 
 
   update(formData) {
-    const url = "http://localhost:8000/api/update-post";
+    const url = "formation-node-mongodb-api.vercel.app/api/update-post";
     const config = {
       headers: {
         "content-type": "multipart/form-data",
