@@ -23,7 +23,7 @@ class Post {
 
 
   deletePost(id){
-    const url = "https://formation-node-mongodb-api.vercel.app/api/delete-post/"+id;
+    const url = "https://formation-node-mongodb-api.vercel.app/api/delete-post/"+id; /// https://formation-node-mongodb-api.vercel.app est remplacé par localhost:8000 pour lire en local
 
     return axios.get(url);
 
