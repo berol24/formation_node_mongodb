@@ -32,7 +32,7 @@ function CreateComponent() {
        setMessage('') 
     }, 3000);
     
-    window.location.href = "/show"
+    // window.location.href = "/show"
     event.target.reset();  // vide le formulaire
   };
 
