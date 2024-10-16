@@ -14,7 +14,9 @@ const path = require('path')
 
 // gestion des fichiers statiques
 
-post_route.use(express.static('public'))  
+// post_route.use(express.static('public'))  
+
+post_route.use(express.static(path.join(__dirname, 'public')))
 
 // gestion du telechargement des images
 
