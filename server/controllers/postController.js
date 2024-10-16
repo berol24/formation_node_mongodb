@@ -6,7 +6,7 @@ const createPost = async (req, res) => {
     const post = new Post({
       title: req.body.title,
       date: req.body.date,
-      image: req.file.filename,
+      image: req.file ? req.file.filename : null,
     });
 
     const postData = await post.save();
@@ -50,7 +50,7 @@ const updatePost = async (req, res) => {
       var id = req.body.id;
       var title = req.body.title;
       var date = req.body.date;
-      var filename = req.file.filename;
+      var filename = req.file.filename ? req.file.filename : null;
 
       await Post.findByIdAndUpdate(
         { _id: id },
