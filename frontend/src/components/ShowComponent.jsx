@@ -57,7 +57,7 @@ function ShowComponent() {
           <td>{post.date}</td>
           <td>
             <img
-              src={"https://formation-node-mongodb-api.vercel.app/postImages/" + post.image}
+              src={"http://localhost:8000/api/postImages/"+ post.image}
               alt={post.title}
               width={50}
               height={50}
